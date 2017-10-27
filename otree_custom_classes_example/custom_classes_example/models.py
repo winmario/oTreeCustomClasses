@@ -30,3 +30,9 @@ class Player(BasePlayer):
     """ attributes """
     name = models.CharField()
     age = models.PositiveIntegerField()
+
+    def role():
+        if self.id_in_group == 1:
+            return 'SurveyPlayer'
+        if self.id_in_group == 2:
+            return 'MarketPlayer'
