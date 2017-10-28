@@ -4,7 +4,6 @@ from otree.api import (
 )
 
 from . import player_classes
-from .player_classes import *
 
 author = 'Mario Winkler'
 
@@ -28,7 +27,7 @@ class Group(BaseGroup):
 
 
 class Player(BasePlayer):
-    all_stockMarket_attributes[0] = all_player_classes[0].all_stockMarket_attributes[0]
-    stockMarketDynam = all_player_classes[0].all_stockMarket_attributes[1]
-
-
+	pass
+    #all_stockMarket_attributes[0] = all_player_classes[0].all_stockMarket_attributes[0]
+    #stockMarketDynam = inspect.get_members(all_player_classes[0].
+player_classes.add(Player)

@@ -5,7 +5,7 @@ from .models import Constants
 
 class Survey(Page):
     form_model = models.Player
-    form_fields = [ 'stockMarketDynam' ]
+    form_fields = ['stockMarketDynam']
 
     def vars_for_template(self):
         return {'a': models.Player.stockMarketStatic}
