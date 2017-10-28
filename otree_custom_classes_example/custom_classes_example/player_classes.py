@@ -2,16 +2,26 @@ from otree.api import models, widgets
 import sys
 import inspect
 
+######################################################################
+
+""" Write your classes here! """
+## Important formation as following
+##
+## class Classname
+##      classnameAttributename = value
+##      classnameAttributename = models.function()
+##
+## example
 
 class StockMarket:
-
 	#static
 	stockMarketStatic = 20
-
-	#dynmaic
+	#dynamic
 	stockMarketDynam = models.CharField()
 
+######################################################################
 
+""" Don't do something here... """
 def add(playerClass):
 	for name, clazz in inspect.getmembers(sys.modules[__name__], inspect.isclass):
 		for name, attr in inspect.getmembers(clazz):

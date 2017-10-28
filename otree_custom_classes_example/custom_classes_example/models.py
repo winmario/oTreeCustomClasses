@@ -3,8 +3,6 @@ from otree.api import (
     Currency as c, currency_range
 )
 
-from . import player_classes
-
 author = 'Mario Winkler'
 
 doc = """
@@ -28,6 +26,7 @@ class Group(BaseGroup):
 
 class Player(BasePlayer):
 	pass
-    #all_stockMarket_attributes[0] = all_player_classes[0].all_stockMarket_attributes[0]
-    #stockMarketDynam = inspect.get_members(all_player_classes[0].
+
+""" Add the attributes to the player class """
+from . import player_classes
 player_classes.add(Player)

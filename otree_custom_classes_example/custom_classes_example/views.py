@@ -8,7 +8,7 @@ class Survey(Page):
     form_fields = ['stockMarketDynam']
 
     def vars_for_template(self):
-        return {'a': models.Player.stockMarketStatic}
+        return {'stockMarketStatic': models.Player.stockMarketStatic}
 
 
 class Results(Page):

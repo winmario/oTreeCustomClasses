@@ -7,8 +7,9 @@
 
 {% block content %}
 
-    {{ a }}
+    <p>Static attribute: {{ stockMarketStatic }}</p>
 
+    <p>Dynamic attribut: </p>
     {% for field in form %}
         {% formfield field %}
     {% endfor %}
