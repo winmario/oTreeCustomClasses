@@ -26,7 +26,3 @@ class Group(BaseGroup):
 
 class Player(BasePlayer):
 	pass
-
-""" Add the attributes to the player class """
-from . import player_classes
-player_classes.add(Player)
