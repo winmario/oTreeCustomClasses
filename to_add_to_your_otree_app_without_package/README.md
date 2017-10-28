@@ -1,5 +1,7 @@
 # The important stuff
 
+Use this, if you DON'T want to install the package only!
+
 --
 How to install
 --
