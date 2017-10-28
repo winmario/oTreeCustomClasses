@@ -1,15 +1,21 @@
-from .models import Player
+from otree.api import (
+    models, widgets, BaseConstants, BaseSubsession, BaseGroup, BasePlayer,
+    Currency as c, currency_range
+)
 
+class StockMarket:
 
-class SurveyPlayer(Player):
-	pass
+	#static
+	stockMarketStatic = 20
 
+	#dynmaic
+	stockMarketDynam = models.CharField()
 
-class MarketPlayer(Player):
-	pass
-
+	all_stockMarket_attributes = [
+		stockMarketStatic,
+		stockMarketDynam
+	]
 
 all_player_classes = [
-	SurveyPlayer,
-	MarketPlayer,
+	StockMarket
 ]
