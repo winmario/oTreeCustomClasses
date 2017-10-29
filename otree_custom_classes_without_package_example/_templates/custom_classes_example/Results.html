@@ -1,0 +1,18 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+
+{% block title %}
+    Page title
+{% endblock %}
+
+{% block content %}
+
+    <p>Great, it works!</p>
+
+    <p>Your entries: {{ player.stockMarketStatic }} and {{ player.stockMarketDynam }}</p>
+
+    {% next_button %}
+
+{% endblock %}
+
+
